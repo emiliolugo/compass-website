@@ -7,7 +7,6 @@ interface MemberCardProps {
     name: string;
     image: string;
     intro: string;
-    linkedin: string;
     email: string;
     color: string;
 }
@@ -16,7 +15,6 @@ const MemberCard: React.FC<MemberCardProps> = ({
     name,
     image,
     intro,
-    linkedin,
     email,
     color,
 }) => {
@@ -66,7 +64,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
                 </h3>
                 <div className="flex items-center gap-x-2">
                     {/* Email Icon */}
-                    <div className="bg-black rounded-sm w-[32px] h-[32px] flex items-center justify-center">
+                    <div className="bg-black rounded-lg w-[32px] h-[32px] flex items-center justify-center">
                         <a 
                             href={`mailto:${email}`}
                             target="_blank" 
@@ -75,17 +73,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
                             <MailIcon className="text-white text-center" />
                         </a>
                     </div>
-                    {/* LinkedIn Icon */}
-                    <div className=" rounded-sm p-1">
-                        <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/images/linkedin.png"
-                                width={32}
-                                height={32}
-                                alt="LinkedIn link"
-                            />
-                        </a>
-                    </div>
+                
                 </div>
             </div>
         </div>

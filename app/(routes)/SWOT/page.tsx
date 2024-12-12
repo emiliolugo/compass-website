@@ -53,6 +53,13 @@ const SWOTInfo = [
       opportunities: ["Technology","Variety of career paths","Meeting new people"],
       threats: ["Other activities","High competition","Interests away from work"]
   },
+  {
+    name: "Johnathan",
+    strengths: ["Drive and ambition","Leadership","Adaptability"],
+    weaknesses: ["Procrastinator","High standards","Burnout"],
+    opportunities: ["Entrepreneurial pursuits","Technical opportunities","Leadership opportunities"],
+    threats: ["Overcommitment","High competition","Potential stress"]
+},
     
 ];
 

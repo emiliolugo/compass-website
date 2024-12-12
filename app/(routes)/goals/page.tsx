@@ -15,12 +15,12 @@ export default function GoalPage() {
         <div className="pb-10 flex flex-col h-screen">
             <div>
       <Navbar /></div>
-      <div className="text-start my-auto w-5/12 mx-auto">
-      <h1 className="text-8xl font-black flex text-center">
+      <div className="text-start my-auto w-7/12 md:w-5/12 mx-auto">
+      <h1 className=" text-6xl md:text-8xl font-black flex text-center">
         Our Goals
         </h1>
         <div>
-      <p className="mt-5 text-2xl text-start">
+      <p className="mt-5 text-xl md:text-2xl text-start">
       <strong>Goal</strong> <span className="text-neutral-400"><em>(noun)</em></span>
       <br></br>
       the object of a person&apos;s ambition or effort; an aim or desired result.

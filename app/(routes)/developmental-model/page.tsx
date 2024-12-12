@@ -1,10 +1,28 @@
 'use client'
 
 import DevelopmentalModelBody from "@/components/DevelopmentalModelBody"
+import DevelopmentalModelMobile from "@/components/DevelopmentalModelMobile";
+
 import Navbar from "@/components/Navbar"
 import { ChevronDownIcon } from "lucide-react";
+import React, { useState, useEffect } from 'react';
 
 export default function DevelopmentalModelPage() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024); // Use lg breakpoint as threshold
+    };
+
+    // Check initial screen size
+    checkMobile();
+
+    // Add event listener to check screen size on resize
+    window.addEventListener('resize', checkMobile);
+
+    // Cleanup event listener
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   return (
     <div>
         <div >
@@ -30,7 +48,7 @@ export default function DevelopmentalModelPage() {
             </div>
         </div>
         <div>
-        <DevelopmentalModelBody />
+          {isMobile ? <DevelopmentalModelMobile /> : <DevelopmentalModelBody />}
         </div>
     </div>
   );

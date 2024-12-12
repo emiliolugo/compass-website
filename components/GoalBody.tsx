@@ -35,11 +35,11 @@ export default function GoalBody() {
         {goals.map((goal, index) => (
           <div
             key={index}
-            className="p-6 bg-white text-stone-900 rounded-lg shadow-md flex flex-col items-center text-start h-64 w-64"
+            className="p-6 bg-white text-stone-900 rounded-lg shadow-md flex flex-col items-center text-start md:h-64 md:w-64"
           >
-            <div className='flex'>
-            <h3 className="text-3xl font-semibold">{goal.title}</h3>
-            <div className={`${goal.bgColor} rounded-lg w-16 h-16`}>            
+            <div className='flex items-center'>
+            <h3 className="text-3xl font-semibold mr-4 md:mr-0">{goal.title}</h3>
+            <div className={`${goal.bgColor} rounded-lg md:w-16 md:h-16`}>            
             <goal.icon className={`w-16 h-16 p-3 ${goal.color}`}/>
           </div>
             </div>

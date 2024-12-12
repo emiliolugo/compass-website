@@ -29,14 +29,12 @@ export default function TeamPage(){
             name: "Alex Huelsman",
             image: "/images/alex.jpg",
             intro:"Hi, I’m Alex Huelsman and I am from Lincolnshire, Illinois. I am pursuing a double major in Kelley with accounting and information systems. I am working towards this by staying dedicated to my education which I would like to use to open different career paths for myself. I am involved in different sports organizations at IU and try to apply that teamwork to work environments. I am excited to apply my experiences from Kelley to help me become successful in the future.",
-            linkedin: "www.linkedin.com",
             email:"alehuels@iu.edu",
         },
         {
-            name: "Kelly Freeman",
-            image: "/images/placeholder-square.jpg",
-            intro:"Hello, my name is Kelly Freeman, and I am a freshman at the Kelley School of Business, majoring in Finance. I am a driven and passionate student, eager to learn and grow both academically and professionally. Currently, I am a member of the Sales Club, and I plan to get involved in many other organizations to make the most of the incredible opportunities at Indiana University. I am excited to expand my skills and experiences to contribute meaningfully to the business world in the future.",
-            linkedin: "www.linkedin.com",
+            name: "Jonathan Brennan",
+            image: "/images/johnathan.jpg",
+            intro: "Hi, my name is Jonathan Brennan, and I’m from Greenwich, Connecticut. I’m currently pursuing a major in Finance, a field I’m deeply passionate about. I’ve gained valuable experience through internships at private equity firms, as well as leadership roles in community service, including serving as Youth Director at the Boys and Girls Club of Greenwich. I’m eager to continue expanding my knowledge and expertise in finance by exploring new opportunities and internships that challenge and inspire me.",
             email:"emlugo@iu.edu",
         },
         
@@ -44,7 +42,7 @@ export default function TeamPage(){
     ]
 
     return(
-        <div className="h-auto bg-zinc-300">
+        <div className="h-auto bg-zinc-300 pb-20">
             <h2 className="text-6xl font-bold p-10 text-stone-900">
                 Meet the Team
             </h2>
@@ -55,7 +53,6 @@ export default function TeamPage(){
                 name={teammate.name}
                 image={teammate.image}
                 intro = {teammate.intro}
-                linkedin={teammate.linkedin}
                 email = {teammate.email}
                 color = {index%2==0 ? "bg-gradient-to-r from-gray-300 to-gray-400":"bg-gray-400"}/>
             ))}
