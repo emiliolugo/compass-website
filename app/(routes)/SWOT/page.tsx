@@ -71,7 +71,7 @@ export default function SWOTPage() {
             <div>
       <Navbar /></div>
       <div className="text-start my-auto w-5/12 mx-auto">
-      <h1 className="text-8xl font-black flex md:flex-row flex-col text-start items-center md:">
+      <h1 className="text-7xl md:text-8xl font-black flex md:flex-row flex-col text-start items-center md:">
         <span>
       {letters.map((letter, index) => (
                 <motion.span

@@ -28,7 +28,7 @@ export default function DevelopmentalModelPage() {
         <div >
           <div className="bg-neutral-900">
             <Navbar /></div><div className="h-screen bg-neutral-900 flex flex-col text-center justify-around">
-            <h1 className="text-6xl font-black my-auto">
+            <h1 className="text-4xl md:text-6xl font-black my-auto">
               
                 Developmental Model
             </h1>

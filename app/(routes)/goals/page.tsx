@@ -43,6 +43,9 @@ export default function GoalPage() {
       <div className="bg-zinc-300 flex flex-col justify-center px-10 gap-y-10 py-10">
         <GoalBody />
         </div>
+        <div className="h-[40vh] w-screen bg-zinc-300 ">
+
+        </div>
     </div>
   );
 }

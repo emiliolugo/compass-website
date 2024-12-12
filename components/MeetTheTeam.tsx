@@ -27,7 +27,7 @@ export default function TeamPage(){
         },
         {
             name: "Alex Huelsman",
-            image: "/images/alex.jpg",
+            image: "/images/alex1.png",
             intro:"Hi, I’m Alex Huelsman and I am from Lincolnshire, Illinois. I am pursuing a double major in Kelley with accounting and information systems. I am working towards this by staying dedicated to my education which I would like to use to open different career paths for myself. I am involved in different sports organizations at IU and try to apply that teamwork to work environments. I am excited to apply my experiences from Kelley to help me become successful in the future.",
             email:"alehuels@iu.edu",
         },
