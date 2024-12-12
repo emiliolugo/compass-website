@@ -1,8 +1,6 @@
 'use client'
 
-import DevelopmentalModelBody from "@/components/DevelopmentalModelBody"
 import Navbar from "@/components/Navbar"
-import PuttersBayBody from "@/components/PuttersBayBody";
 import TeamSkillsBody from "@/components/TeamSkillsBody";
 
 export default function PuttersBayPage() {

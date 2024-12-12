@@ -14,7 +14,7 @@ export default function HeroPage(){
                     The Academic Weapons
                 </h1>
                 <p className="text-center hidden md:block mx-5">
-                    Hello! We are The Academic Weapons, a group from Keith Dayton's 6:30 section of BUS-T 175.
+                    Hello! We are The Academic Weapons, a group from Keith Dayton&apos;s 6:30 section of BUS-T 175.
                 </p></div>
             </div>
     <div className="absolute w-[55vw] h-[80vh] bottom-0 z-20 bg-gradient-to-r from-neutral-900 to-neutral-900 shadow-lg">

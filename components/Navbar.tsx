@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,22 +32,22 @@ const Navbar: React.FC = () => {
                     } lg:static absolute bg-gray-900 w-full left-0 top-12 lg:w-auto lg:bg-transparent`}
                 >
                     <li className="hover:text-gray-400 transition">
-                        <a href="/">Home</a>
+                        <Link href="/">Home</Link>
                     </li>
                     <li className="hover:text-gray-400 transition">
-                        <a href="SWOT">SWOT</a>
+                        <Link href="/SWOT">SWOT</Link>
                     </li>
                     <li className="hover:text-gray-400 transition">
-                        <a href="team-skills">Team Skills</a>
+                        <Link href="/team-skills">Team Skills</Link>
                     </li>
                     <li className="hover:text-gray-400 transition">
-                        <a href="goals">Goals</a>
+                        <Link href="/goals">Goals</Link>
                     </li>
                     <li className="hover:text-gray-400 transition">
-                        <a href="developmental-model">Developmental Model</a>
+                        <Link href="/developmental-model">Developmental Model</Link>
                     </li>
                     <li className="hover:text-gray-400 transition">
-                        <a href="putters-bay">Putter's Bay</a>
+                        <Link href="/putters-bay">Putter&apos;s Bay</Link>
                     </li>
                 </ul>
             </div>

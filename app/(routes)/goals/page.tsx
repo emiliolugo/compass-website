@@ -23,7 +23,7 @@ export default function GoalPage() {
       <p className="mt-5 text-2xl text-start">
       <strong>Goal</strong> <span className="text-neutral-400"><em>(noun)</em></span>
       <br></br>
-      the object of a person's ambition or effort; an aim or desired result.
+      the object of a person&apos;s ambition or effort; an aim or desired result.
       </p></div></div>
 
       <div className="flex flex-col items-center mb-10">

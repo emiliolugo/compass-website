@@ -39,7 +39,7 @@ const SWOTAnalysis: React.FC<SWOTAnalysisProps> = ({
                 >
                     <h2 className="font-semibold text-2xl mb-4">Strengths</h2>
                     {strengths.map((strength) => (
-                        <div className="flex items-start mb-2">
+                        <div key={strength} className="flex items-start mb-2">
                             <div className="bg-zinc-400/10 rounded-md mr-1">
                                 <CheckIcon className="text-green-500" />
                             </div>
@@ -62,7 +62,7 @@ const SWOTAnalysis: React.FC<SWOTAnalysisProps> = ({
                 >
                     <h2 className="font-semibold text-2xl mb-4">Weaknesses</h2>
                     {weaknesses.map((weakness) => (
-                        <div className="flex items-start mb-2">
+                        <div key={weakness} className="flex items-start mb-2">
                             <div className="bg-zinc-400/10 rounded-md mr-1">
                                 <ShieldXIcon className="text-blue-500" />
                             </div>
@@ -85,7 +85,7 @@ const SWOTAnalysis: React.FC<SWOTAnalysisProps> = ({
                 >
                     <h2 className="font-semibold text-2xl mb-4">Opportunities</h2>
                     {opportunitites.map((opportunity) => (
-                        <div className="flex items-start mb-2">
+                        <div key={opportunity} className="flex items-start mb-2">
                             <div className="bg-zinc-400/10 rounded-md mr-1">
                                 <ChevronsUpIcon className="text-yellow-500" />
                             </div>
@@ -108,7 +108,7 @@ const SWOTAnalysis: React.FC<SWOTAnalysisProps> = ({
                 >
                     <h2 className="font-semibold text-2xl mb-4">Threats</h2>
                     {threats.map((threat) => (
-                        <div className="flex items-start mb-2">
+                        <div key={threat} className="flex items-start mb-2">
                             <div className="bg-zinc-400/10 rounded-md mr-1">
                                 <XIcon className="text-red-500" />
                             </div>

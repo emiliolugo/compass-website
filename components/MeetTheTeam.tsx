@@ -51,6 +51,7 @@ export default function TeamPage(){
         <div className="grid-cols-3 grid gap-10 p-20">
             {TeamInfo.map((teammate, index) =>(
                 <MemberCard 
+                key={index}
                 name={teammate.name}
                 image={teammate.image}
                 intro = {teammate.intro}

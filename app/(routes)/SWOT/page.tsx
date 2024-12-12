@@ -3,7 +3,6 @@
 
 import Navbar from "@/components/Navbar";
 import SWOTAnalysis from "@/components/SWOTAnalysis";
-import Image from "next/image";
 import { motion } from "framer-motion"
 import { ChevronDownIcon } from "lucide-react";
 
@@ -106,7 +105,8 @@ export default function SWOTPage() {
       </div>
       <div className="bg-zinc-300 flex flex-col justify-center px-10 gap-y-10 py-10">
         {SWOTInfo.map((element)=>(
-            <SWOTAnalysis  
+            <SWOTAnalysis
+            key={element.name}  
             name = {element.name}
             strengths = {element.strengths}
             weaknesses = {element.weaknesses}
