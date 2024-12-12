@@ -24,10 +24,10 @@ const SWOTAnalysis: React.FC<SWOTAnalysisProps> = ({
                 {`${name}'s SWOT Analysis`}
             </div>
 
-            <div className="flex items-center gap-x-5 justify-center">
+            <div className="flex flex-col lg:flex-row items-center gap-y-5 lg:gap-x-5 justify-center">
                 {/* Strengths */}
                 <motion.div
-                    className="h-[30vh] w-[20vw] bg-transparent border-4 border-green-500 rounded-xl shadow-lg p-5 text-black bg-white"
+                    className="h-[30vh] w-full md:w-[60vw] lg:w-[20vw] bg-transparent border-4 border-green-500 rounded-xl shadow-lg p-5 text-black bg-white"
                     whileHover={{
                         scale: 1.05,
                         y: -10,
@@ -50,7 +50,7 @@ const SWOTAnalysis: React.FC<SWOTAnalysisProps> = ({
 
                 {/* Weaknesses */}
                 <motion.div
-                    className="h-[35vh] w-[20vw] bg-transparent border-4 border-blue-500 rounded-xl shadow-lg p-5 text-black bg-white"
+                    className="h-[35vh] w-full md:w-[60vw] lg:w-[20vw] bg-transparent border-4 border-blue-500 rounded-xl shadow-lg p-5 text-black bg-white"
                     whileHover={{
                         scale: 1.05,
                         y: -10,
@@ -73,7 +73,7 @@ const SWOTAnalysis: React.FC<SWOTAnalysisProps> = ({
 
                 {/* Opportunities */}
                 <motion.div
-                    className="h-[35vh] w-[20vw] bg-transparent border-4 border-yellow-500 rounded-xl shadow-lg p-5 text-black bg-white"
+                    className="h-[35vh] w-full md:w-[60vw] lg:w-[20vw] bg-transparent border-4 border-yellow-500 rounded-xl shadow-lg p-5 text-black bg-white"
                     whileHover={{
                         scale: 1.05,
                         y: -10,
@@ -96,7 +96,7 @@ const SWOTAnalysis: React.FC<SWOTAnalysisProps> = ({
 
                 {/* Threats */}
                 <motion.div
-                    className="h-[30vh] w-[20vw] bg-transparent border-4 border-red-500 rounded-xl shadow-lg p-5 text-black bg-white"
+                    className="h-[30vh] w-full md:w-[60vw] lg:w-[20vw] bg-transparent border-4 border-red-500 rounded-xl shadow-lg p-5 text-black bg-white"
                     whileHover={{
                         scale: 1.05,
                         y: -10,

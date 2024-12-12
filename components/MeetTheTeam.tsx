@@ -48,7 +48,7 @@ export default function TeamPage(){
             <h2 className="text-6xl font-bold p-10 text-stone-900">
                 Meet the Team
             </h2>
-        <div className="grid-cols-3 grid gap-10 p-20">
+        <div className="grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid gap-10 md:p-20">
             {TeamInfo.map((teammate, index) =>(
                 <MemberCard 
                 key={index}

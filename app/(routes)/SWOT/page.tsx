@@ -64,7 +64,8 @@ export default function SWOTPage() {
             <div>
       <Navbar /></div>
       <div className="text-start my-auto w-5/12 mx-auto">
-      <h1 className="text-8xl font-black flex text-start">
+      <h1 className="text-8xl font-black flex md:flex-row flex-col text-start items-center md:">
+        <span>
       {letters.map((letter, index) => (
                 <motion.span
                     key={index}
@@ -78,11 +79,11 @@ export default function SWOTPage() {
                 >
                     {letter}
                 </motion.span>
-            ))}
+            ))}</span>
             <span>&nbsp;Analysis</span>
         </h1>
         <div>
-      <p className="mt-5 text-2xl text-start">
+      <p className="mt-5 text-2xl text-start md:block hidden">
       An <em>in-depth</em> analysis of <strong>strengths</strong>, <strong>weaknesses</strong>, <strong>opportunities</strong>, and <strong>threats</strong> 
       <a href="https://www.eda.gov/resources/comprehensive-economic-development-strategy/content/swot-analysis" target="noopener" className="text-blue-500 text-end">
         <br></br>eda.gov

@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar"
 import TeamSkillsBody from "@/components/TeamSkillsBody";
+import { ChevronDownIcon } from "lucide-react";
 
 export default function PuttersBayPage() {
   return (
@@ -13,7 +14,21 @@ export default function PuttersBayPage() {
               
                 Team Skills
             </h1>
+            <div className="flex flex-col items-center mb-10">
+      {[4, 3, 2].map((size, index) => (
+        <div
+          key={index}
+          className={`animate-ping`}
+          style={{
+            animationDelay: `${index * 0.15}s`, // Adds staggered delay
+          }}
+        >
+          <ChevronDownIcon className={`w-${size} h-${size}`} />
+        </div>
+      ))}
+    </div>
             </div>
+            
         </div>
         <div>
        <TeamSkillsBody />

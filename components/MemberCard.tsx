@@ -27,7 +27,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
     };
 
     return (
-        <div>
+        <div className="mx-auto">
             {/* Main Card with Hover Effect */}
             <motion.div
                 className={`${color} w-96 h-96 rounded-lg relative overflow-hidden`}
